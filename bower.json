@@ -1,0 +1,17 @@
+{
+  "name": "angular-drag-and-drop",
+  "version": "0.0.1",
+  "authors": [
+    "Alexey Popov <asdalexey@yandex.ru>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.2.x",
+    "lodash": "~3.10.1",
+    "jquery-ui": "~1.11.4",
+    "angular-dragdrop": "~1.0.12"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.x"
+  }
+}

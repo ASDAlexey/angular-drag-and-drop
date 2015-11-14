@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--html(style="opacity:0")-->
+<html ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+    <title>Cropper</title>
+    <link href="bower_components/cropper/dist/cropper.css" rel="stylesheet">
+    <link href="styles/states/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/application.css" rel="stylesheet">
+  </head>
+  <body ng-controller="Dragdrop as dd"><a href="" ng-class="{'active':dd.item.visible,'hidden':dd.item.hidden}" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options="{containment: '.tree',revert: 'invalid' }" class="drag-block">drag</a>
+    <div jqyoui-droppable="{onDrop: 'dd.onDrop'}" data-drop="true" data-jqyoui-options="" class="drop-block">
+      <div ng-class="{'active':tree.dropActive,'hide':tree.dropHide}" class="reward-after-drop"></div>
+    </div>
+  </body>
+</html>
+<script src="bower_components/lodash/lodash.min.js" defer></script>
+<script src="bower_components/jquery/dist/jquery.min.js" defer></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js" defer></script>
+<script src="bower_components/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js" defer></script>
+<script src="bower_components/angular/angular.min.js" defer></script>
+<script src="bower_components/angular-dragdrop/src/angular-dragdrop.min.js" defer></script>
+<script src="scripts/DragDrop.js" defer></script>

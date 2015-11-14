@@ -1,0 +1,13 @@
+//- index.jade
+extends ../layout.jade
+block content
+    a.drag-block(href=""
+        ng-class="{'active':dd.item.visible,'hidden':dd.item.hidden}"
+        jqyoui-draggable="{animate:true}"
+        data-drag="true"
+        data-jqyoui-options="{containment: '.tree',revert: 'invalid' }") drag
+    .drop-block(jqyoui-droppable="{onDrop: 'dd.onDrop'}"
+        data-drop='true'
+        data-jqyoui-options='')
+        .reward-after-drop(ng-class="{'active':tree.dropActive,'hide':tree.dropHide}")
+
