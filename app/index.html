@@ -12,7 +12,8 @@
     <link href="styles/application.css" rel="stylesheet">
   </head>
   <body ng-controller="Dragdrop as dd"><a href="" ng-class="{'active':dd.item.visible,'hidden':dd.item.hidden}" jqyoui-draggable="{animate:true}" data-drag="true" data-jqyoui-options="{containment: '.tree',revert: 'invalid' }" class="drag-block">drag</a>
-    <div jqyoui-droppable="{onDrop: 'dd.onDrop'}" data-drop="true" data-jqyoui-options="" class="drop-block">
+    <div jqyoui-droppable="{onDrop: 'dd.beforeDrop'}" data-drop="true" data-jqyoui-options="" class="drop-block">
+      <div class="inner"></div>
       <div ng-class="{'active':tree.dropActive,'hide':tree.dropHide}" class="reward-after-drop"></div>
     </div>
   </body>

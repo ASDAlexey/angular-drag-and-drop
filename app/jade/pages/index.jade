@@ -6,8 +6,9 @@ block content
         jqyoui-draggable="{animate:true}"
         data-drag="true"
         data-jqyoui-options="{containment: '.tree',revert: 'invalid' }") drag
-    .drop-block(jqyoui-droppable="{onDrop: 'dd.onDrop'}"
+    .drop-block(jqyoui-droppable="{onDrop: 'dd.beforeDrop'}"
         data-drop='true'
         data-jqyoui-options='')
+        .inner
         .reward-after-drop(ng-class="{'active':tree.dropActive,'hide':tree.dropHide}")
 
